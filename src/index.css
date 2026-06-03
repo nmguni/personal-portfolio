@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0f1418;
+  --color-background: rgb(225, 225, 225);
   --color-foreground: #f0f2f5;
 
   --color-card: #141a1f;
 
-  --color-primary: #20b2a6;
+  --color-primary: rgb(44, 62, 80);
   --color-primary-foreground: #ffffff;
 
   --color-secondary: #1f2830;
@@ -20,7 +20,11 @@
   --radius: 0.75rem;
 
   --color-highlight: #f5a623;
-  --color-surface: #1a2329;
+  --color-surface: #1a23296e;
+}
+
+section {
+  padding: 0 50px;
 }
 
 @layer base {
@@ -41,9 +45,39 @@
   .font-serif {
     font-family: "Playfair Display", serif;
   }
+
+  .line-height-p {
+    line-height: 1.8rem;
+  }
+
+  .about-image {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+
+  #projects,
+  #about {
+    margin: 0 30px;
+  }
+
+  .exp-tech-stack {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @layer components {
+  .glass-0 {
+    background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+    backdrop-filter: blur(16px);
+  }
   .glass {
     background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
     backdrop-filter: blur(16px);

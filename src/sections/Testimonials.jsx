@@ -1,5 +1,10 @@
-export const Testimonials = () => {
+export const Testimonials = ({ slides }) => {
    return (
-      <section></section>
+      <div >
+         {slides.map((slide) => {
+            return <img src={slide} />
+         })}
+      </div>
    )
-}
+
+};
