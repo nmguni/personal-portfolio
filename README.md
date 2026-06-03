@@ -1,5 +1,11 @@
-# Personal Portfolio
+# Ndumiso Mguni Portfolio
 
-### Built with
+---
 
-ReactJs TawilwindCSS
+![ndumiso mguni](src/assets/images/portfolio-screenshot.png)
+
+#### Live Link to my - COMING SOON [Portfolio]().
+
+### Built With
+
+`React - tailwindcss`

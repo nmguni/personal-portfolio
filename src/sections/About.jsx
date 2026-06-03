@@ -12,13 +12,13 @@ export const About = () => {
                      </span>
                   </div>
 
-                  {/* <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-                     Outside of work,
+                  <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-primary">
+                     Learn more about
                      <span className="font-serif italic font-normal text-white">
                         {" "}
-
+                        me
                      </span>
-                  </h2> */}
+                  </h2>
 
                   <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                      <p className="line-height-p" >

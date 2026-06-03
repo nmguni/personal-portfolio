@@ -41,7 +41,7 @@ export const Contact = () => {
 
                      href="https://www.linkedin.com/in/ndumiso-mguni/"
                      target="_blank"
-                     className="p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                     className="btn-animation p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-500"
                   >
                      <FaLinkedin />
                   </a>
@@ -49,7 +49,7 @@ export const Contact = () => {
 
                      href="https://github.com/nmguni/"
                      target="_blank"
-                     className="p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                     className="btn-animation p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-500"
                   >
                      <FaGithubSquare />
                   </a>
@@ -57,7 +57,7 @@ export const Contact = () => {
 
                      href="mailto:ndumiso29@gmail.com"
                      target="_blank"
-                     className="p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                     className="btn-animation p-2 rounded-full glass-0 text-4xl hover:bg-primary/10 hover:text-primary transition-all duration-500"
                   >
                      <MdEmail />
                   </a>

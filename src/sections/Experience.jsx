@@ -5,7 +5,17 @@ const experiences = [
       company: "Chairman Mills - Event Rental Solutions",
       description:
          "Managed and optimized nine WordPress and headless CMS websites, improving performance, accessibility, SEO, and overall user experience. Partnered with marketing teams to turn designs into responsive landing pages that increased engagement and conversions. Used analytics and A/B testing to drive continuous improvements and support data-driven decisions. Enhanced WordPress themes and editor workflows to simplify content management, while automating lead processes to reduce spam and improve operational efficiency. Served as the primary technical contact, providing guidance to stakeholders and keeping projects on track..",
-      technologies: ["JavaScript", "PHP", "HTML", "CSS", "WordPress", "Headless", "CMS", "SEO", "MySQL"],
+      technologies: [
+         "JavaScript",
+         "PHP",
+         "HTML",
+         "CSS",
+         "WordPress",
+         "Headless",
+         "CMS",
+         "SEO",
+         "MySQL",
+      ],
       current: false,
    },
    {
@@ -14,7 +24,18 @@ const experiences = [
       company: "Klick Health",
       description:
          "Built and maintained AEM websites and digital applications for pharmaceutical clients, ensuring accessibility and regulatory compliance. Translated designs into responsive components that delivered consistent experiences across devices. Supported ongoing releases by troubleshooting issues and collaborating closely with design, QA, and project teams. Developed dynamic features, integrated external data sources, and led development efforts on key projects while managing timelines and stakeholder communication.",
-      technologies: ["AEM", "JavaScript", "React", "Gatsby", "HTML", "CSS", "SCSS", "JSON", "jQuery", "Figma"],
+      technologies: [
+         "AEM",
+         "JavaScript",
+         "React",
+         "Gatsby",
+         "HTML",
+         "CSS",
+         "SCSS",
+         "JSON",
+         "jQuery",
+         "Figma",
+      ],
       current: false,
    },
    {
@@ -23,23 +44,22 @@ const experiences = [
       company: "Ontario SEO",
       description:
          "Developed and maintained WordPress and Drupal websites with a strong focus on performance, accessibility, and SEO. Collaborated with marketing and content teams to deliver site enhancements and new features. Improved search visibility through technical SEO best practices and structured data implementation. Set up analytics and tracking to measure performance, identify opportunities, and support ongoing optimization efforts. Assisted with troubleshooting, maintenance, and technical documentation across multiple client projects.",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP", "Figma", "WordPress", "Drupal"],
-      current: false,
-   },
-   {
-      period: "2016 - 2017",
-      role: "The Journy Begins",
-      company: "Learning and Building Personal Projects",
-      description:
-         "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-      technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      technologies: [
+         "HTML",
+         "CSS",
+         "JavaScript",
+         "PHP",
+         "Figma",
+         "WordPress",
+         "Drupal",
+      ],
       current: false,
    },
 ];
 
 export const Experience = () => {
    return (
-      <section id="experience" className="py-32 mt-30 mb-30 relative overflow-hidden">
+      <section id="experience" className="py-32 mt-30 mb-30 relative">
          <div
             className="absolute top-1/2 left-1/4 w-96
        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
@@ -96,21 +116,24 @@ export const Experience = () => {
 
                         {/* Content */}
                         <div
-
                            className={`pl-8 md:pl-0 ${idx % 2 === 0
-                              ? "md:pr-16 md:text-right"
-                              : "md:col-start-2 md:pl-16"
+                                 ? "md:pr-16 md:text-right"
+                                 : "md:col-start-2 md:pl-16"
                               }`}
                         >
                            <div
                               className={`glass-1 p-6 rounded-2xl  about-image hover:border-primary/50 transition-all duration-500`}
                            >
-                              <span className="text-sm text-primary">
-                                 {exp.period}
-                              </span>
-                              <h3 className=" text-xl font-semibold mt-2 text-primary">{exp.role}</h3>
-                              <p className="
-                              text-muted-foreground">{exp.company}</p>
+                              <span className="text-sm text-primary">{exp.period}</span>
+                              <h3 className=" text-xl font-semibold mt-2 text-primary">
+                                 {exp.role}
+                              </h3>
+                              <p
+                                 className="
+                              text-muted-foreground"
+                              >
+                                 {exp.company}
+                              </p>
                               <p className="text-sm text-muted-foreground mt-4">
                                  {exp.description}
                               </p>

@@ -1,4 +1,5 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { CarouselComponent } from "../components/CarouselComponent";
 
 const projects = [
    {
@@ -37,29 +38,63 @@ const projects = [
       link: "https://inps.net/",
       github: "#",
    },
+];
+
+const chairmanmills = [
    {
-      title: "Ontario SEO",
+      title: "Element Event Solutions (Chairman Mills)",
       description:
-         "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-      image: "/projects/project4.png",
-      tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-      link: "#",
-      github: "#",
+         " Chairman Mills recently rebranded, bringing all its companies together under one unified brand: Element Event Solutions. The original website is no longer fully accessible, but you can still view it via the Wayback Machine using the “Live Site” button. At Chair-man Mills, I supported and optimized a network of nine WordPress and Headless CMS websites, focusing on compliance, accessibility, and seamless user experience.I customized WordPress themes using PHP, ACF, and Gutenberg blocks to simplify content authoring workflows. Using Zapier and Monday.com automations. Acting as the main technical point of contact, I communicated project updates, deployment timelines, and technical solutions to non‑technical teams keeping site launches on track and stakeholders fully informed.",
+      image: "../src/assets/images/portfolio-images/skyrizihcp-image.jpg",
+      tags: [
+         "JavaScript",
+         "PHP",
+         "HTML",
+         "CSS",
+         "WordPress",
+         "Headless",
+         "CMS",
+         "SEO",
+         "MySQL",
+      ],
+      chairmanLink:
+         "https://web.archive.org/web/20201130203716/www.chairmanmills.com/",
+      eventRentalLink: "https://elementeventscanada.com/",
+      // github: "#",
+   },
+];
+
+const slides = [
+   // {
+   //    title: "Element event",
+   //    image: "../src/assets/images/carousel-imagesel/element-event.jpg",
+
+   // },
+   {
+      title: "Advanced tent renta",
+      image:
+         "../src/assets/images/carousel-images/advanced-tent-rental-portfolio.jpg",
    },
    {
-      title: "Ontario SEO",
-      description:
-         "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-      image: "/projects/project4.png",
-      tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-      link: "#",
-      github: "#",
+      title: "Chairman mills slide 1",
+      image: "../src/assets/images/carousel-images/chairmanmills-slide1.jpg",
+   },
+   {
+      title: "Chairman mills slide 1",
+      image: "../src/assets/images/carousel-images/chairmanmills-slide2.jpg",
+   },
+   {
+      title: "Chairman mills slide 2",
+      image: "../src/assets/images/carousel-images/chairmanmills-slide3.jpg",
    },
 ];
 
 export const Projects = () => {
    return (
-      <section id="projects" className="py-32 mt-30 mb-30 relative overflow-hidden">
+      <section
+         id="projects"
+         className="py-32 mt-30 mb-30 relative overflow-hidden"
+      >
          {/* Bg glows */}
          <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
          <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -81,6 +116,10 @@ export const Projects = () => {
                   innovative tools that solve real-world problems.
                </p> */}
             </div>
+
+            {/* Image Carosuel */}
+
+            <CarouselComponent chairmanmills={chairmanmills} slides={slides} />
 
             {/* Projects Grid */}
             <div className="grid md:grid-cols-2 gap-8">
@@ -104,14 +143,9 @@ export const Projects = () => {
                         />
                         {/* Overlay Links */}
                         <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-80 text-2xl transition-opacity duration-300">
-                           <a
-                              href={project.link}
-                              className="p-3 rounded-full glass-0"
-                           >
+                           <a href={project.link} className="p-3 rounded-full glass-0">
                               <FaExternalLinkAlt />
-
                            </a>
-
                         </div>
                      </div>
 
@@ -121,11 +155,8 @@ export const Projects = () => {
                            <h3 className="text-xl text-primary font-semibold ">
                               {project.title}
                            </h3>
-
                         </div>
-                        <p className="text-primary text-sm">
-                           {project.description}
-                        </p>
+                        <p className="text-primary text-sm">{project.description}</p>
                         <div className="flex flex-wrap gap-2">
                            {project.tags.map((tag, tagIdx) => (
                               <span

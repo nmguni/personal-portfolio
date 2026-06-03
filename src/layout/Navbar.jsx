@@ -6,7 +6,7 @@ const navLinks = [
    { href: "#about", label: "About" },
    { href: "#projects", label: "Projects" },
    { href: "#experience", label: "Experience" },
-   // { href: "#testimonials", label: "Testimonials" },
+   // { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -53,7 +53,9 @@ export const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-               <Button size="sm">Contact Me</Button>
+               <Button size="sm" className="btn-animation">
+                  <a href="#contact">Contact Me</a>
+               </Button>
             </div>
 
             {/* Mobile Menu Button */}
