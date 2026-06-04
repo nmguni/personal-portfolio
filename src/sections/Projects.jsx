@@ -1,12 +1,22 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { CarouselComponent } from "../components/CarouselComponent";
 
+
+import skyrizihcpImage from '../assets/images/portfolio-images/skyrizihcp-image.jpg'
+import rinvoqhcpImage from '../assets/images/portfolio-images/rinvoqhcp-image.jpg'
+import SigmaImgae from '../assets/images/portfolio-images/sigma-portfolio.jpg'
+import inpsImage from '../assets/images/portfolio-images/inps-portfolio.jpg'
+import slideOne from '../assets/images/carousel-images/advanced-tent-rental-portfolio.jpg'
+import slideTwo from '../assets/images/carousel-images/chairmanmills-slide1.jpg'
+import slideThree from '../assets/images/carousel-images/chairmanmills-slide2.jpg'
+import slideFour from '../assets/images/carousel-images/chairmanmills-slide3.jpg'
+
 const projects = [
    {
       title: "Klick Health | Skyrizi HCP Project",
       description:
          "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-      image: "../src/assets/images/portfolio-images/skyrizihcp-image.jpg",
+      image: skyrizihcpImage,
       tags: ["AEM", "JavaScript", "SCSS", "CSS"],
       link: "https://www.skyrizihcp.com/gastroenterology/crohns-disease",
       // github: "#",
@@ -15,7 +25,7 @@ const projects = [
       title: "Klick Health | Rinvoq HCP Project",
       description:
          "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-      image: "../src/assets/images/portfolio-images/rinvoqhcp-image.jpg",
+      image: rinvoqhcpImage,
       tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
       link: "https://www.rinvoqhcp.com/rheumatoid-arthritis",
       // github: "#",
@@ -24,7 +34,7 @@ const projects = [
       title: "Ontario SEO | Sigma Assessment Systems",
       description:
          "Transform PDFs into working pages in the succession planning section, upload content to the blog page while optimizing images, and use a crawler to audit sites for common SEO issues such as broken links, redirects, duplicate content, and page title and metadata problems.",
-      image: "../src/assets/images/portfolio-images/sigma-portfolio.jpg",
+      image: SigmaImgae,
       tags: ["WordPress", "HTML", "INPS", "SEO", "JavaScript"],
       link: "https://www.sigmaassessmentsystems.com/",
       github: "#",
@@ -33,7 +43,7 @@ const projects = [
       title: "Ontario SEO | INPS",
       description:
          "Transform PDF’s into working pages for the Canadian, US, and Mexican Sites.Page rebuilds were completed for all the Rail, Graphic, Transit, OEM, and Fleet Solutions pages.Optimized images in compliance with SEO standards.",
-      image: "../src/assets/images/portfolio-images/inps-portfolio.jpg",
+      image: inpsImage,
       tags: ["Drupal", "HTML", "CSS"],
       link: "https://inps.net/",
       github: "#",
@@ -45,7 +55,6 @@ const chairmanmills = [
       title: "Element Event Solutions (Chairman Mills)",
       description:
          " Chairman Mills recently rebranded, bringing all its companies together under one unified brand: Element Event Solutions. The original website is no longer fully accessible, but you can still view it via the Wayback Machine using the “Live Site” button. At Chair-man Mills, I supported and optimized a network of nine WordPress and Headless CMS websites, focusing on compliance, accessibility, and seamless user experience.I customized WordPress themes using PHP, ACF, and Gutenberg blocks to simplify content authoring workflows. Using Zapier and Monday.com automations. Acting as the main technical point of contact, I communicated project updates, deployment timelines, and technical solutions to non‑technical teams keeping site launches on track and stakeholders fully informed.",
-      image: "../src/assets/images/portfolio-images/skyrizihcp-image.jpg",
       tags: [
          "JavaScript",
          "PHP",
@@ -72,23 +81,22 @@ const slides = [
    // },
    {
       title: "Advanced tent renta",
-      image:
-         "../src/assets/images/carousel-images/advanced-tent-rental-portfolio.jpg",
+      image: slideOne,
       id: 1
    },
    {
       title: "Chairman mills slide 1",
-      image: "../src/assets/images/carousel-images/chairmanmills-slide1.jpg",
+      image: slideTwo,
       id: 2
    },
    {
       title: "Chairman mills slide 1",
-      image: "../src/assets/images/carousel-images/chairmanmills-slide2.jpg",
+      image: slideThree,
       id: 3
    },
    {
       title: "Chairman mills slide 2",
-      image: "../src/assets/images/carousel-images/chairmanmills-slide3.jpg",
+      image: slideFour,
       id: 4
    },
 ];
@@ -128,6 +136,8 @@ export const Projects = () => {
             {/* Projects Grid */}
             <div className="grid md:grid-cols-2 gap-8">
                {projects.map((project, idx) => (
+
+
                   <div
                      key={idx}
                      className="group overflow-hidden animate-fade-in md:row-span-1"
