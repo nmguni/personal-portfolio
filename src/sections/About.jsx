@@ -1,3 +1,4 @@
+import aboutMeImage from '../assets/images/about-image.jpg'
 
 export const About = () => {
    return (
@@ -46,7 +47,7 @@ export const About = () => {
                <div className=" ">
                   <div className="about-image animate-fade-in" >
                      <img
-                        src="../src/assets/images/about-image.jpg"
+                        src={aboutMeImage}
                         alt="Ndumiso Mguni"
                         className="w-full about-image  object-fit"
                      />
