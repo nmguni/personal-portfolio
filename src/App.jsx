@@ -4,6 +4,7 @@ import { Projects } from "@/sections/Projects"
 import { Contact } from "@/sections/Contact"
 import { Experience } from "@/sections/Experience"
 import { Navbar } from "@/layout/Navbar"
+import { Footer } from "./layout/Footer"
 
 export const App = () => {
 
@@ -16,6 +17,7 @@ export const App = () => {
         <Projects />
         <Experience />
         <Contact />
+        <Footer />
       </main>
     </div>
   )

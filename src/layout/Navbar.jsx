@@ -6,7 +6,6 @@ const navLinks = [
    { href: "#about", label: "About" },
    { href: "#projects", label: "Projects" },
    { href: "#experience", label: "Experience" },
-   // { href: "#contact", label: "Contact" },
 ];
 
 export const Navbar = () => {
@@ -69,14 +68,14 @@ export const Navbar = () => {
 
          {/* Mobile Menu */}
          {isMobileMenuOpen && (
-            <div className="md:hidden glass-strong animate-fade-in">
-               <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+            <div className="md:hidden  glass-0 animate-fade-in">
+               <div className="container mx-auto px-6 py-2 flex flex-col gap-4">
                   {navLinks.map((link, index) => (
                      <a
                         href={link.href}
                         key={index}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-lg text-muted-foreground hover:text-foreground py-2"
+                        className="text-lg text-white hover:text-primary py-2"
                      >
                         {link.label}
                      </a>

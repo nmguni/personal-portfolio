@@ -29,7 +29,7 @@ export const CarouselComponent = ({ slides, chairmanmills }) => {
                }}
             >
                {slides.map((s) => {
-                  return <img id="caroul-img" src={s.image} alt={s.title} />;
+                  return <img id="caroul-img" key={s.id} src={s.image} alt={s.title} />;
                })}
             </div>
 
@@ -59,7 +59,6 @@ export const CarouselComponent = ({ slides, chairmanmills }) => {
          </div>
 
          <div>
-
             {chairmanmills.map((mills, idx) => (
                <div
                   key={idx}
@@ -72,7 +71,7 @@ export const CarouselComponent = ({ slides, chairmanmills }) => {
                            {mills.title}
                         </h3>
                      </div>
-                     <p className="text-primary text-sm">{mills.description}</p>
+                     <p className=" line-height-p text-muted-foreground">{mills.description}</p>
                      <div className="flex flex-wrap gap-2">
                         {mills.tags.map((tag, tagIdx) => (
                            <span

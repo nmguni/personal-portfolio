@@ -24,22 +24,14 @@ const skills = [
 
 export const Hero = () => {
    return (
-      <section className="relative min-h-screen flex items-center overflow-hidden p-20 p-20">
-         {/* Bg */}
-         {/* <div className="absolute inset-0">
-            <img
-               src="/hero-bg.jpg"
-               alt="Hero image"
-               className="w-full h-full object-cover opacity-40"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
-         </div> */}
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden p-20 p-20">
 
          {/* Green Dots */}
          <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {[...Array(30)].map((_, i) => (
                <div
                   className="absolute w-1.5 h-1.5 rounded-full opacity-60"
+                  key={i}
                   style={{
                      backgroundColor: "#20B2A6",
                      left: `${Math.random() * 100}%`,
@@ -65,7 +57,7 @@ export const Hero = () => {
 
                   {/* Headline */}
                   <div className="space-y-4">
-                     <h1 className=" text-primary text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                     <h1 className=" text-primary text-4xl sm:text2xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
                         Ndumiso Mguni <br />
                         <span className="text-primary glow-text">
                            Frontend{" "}
@@ -139,8 +131,7 @@ export const Hero = () => {
                </p> */}
                <div className="relative overflow-hidden">
                   <div
-                     className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
+                     className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10"
                   />
                   <div
                      className="absolute right-0 top-0 bottom-0 w-32

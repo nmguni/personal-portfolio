@@ -74,18 +74,22 @@ const slides = [
       title: "Advanced tent renta",
       image:
          "../src/assets/images/carousel-images/advanced-tent-rental-portfolio.jpg",
+      id: 1
    },
    {
       title: "Chairman mills slide 1",
       image: "../src/assets/images/carousel-images/chairmanmills-slide1.jpg",
+      id: 2
    },
    {
       title: "Chairman mills slide 1",
       image: "../src/assets/images/carousel-images/chairmanmills-slide2.jpg",
+      id: 3
    },
    {
       title: "Chairman mills slide 2",
       image: "../src/assets/images/carousel-images/chairmanmills-slide3.jpg",
+      id: 4
    },
 ];
 
@@ -156,8 +160,8 @@ export const Projects = () => {
                               {project.title}
                            </h3>
                         </div>
-                        <p className="text-primary text-sm">{project.description}</p>
-                        <div className="flex flex-wrap gap-2">
+                        <p className="text-muted-foreground">{project.description}</p>
+                        <div className=" line-height-p flex flex-wrap gap-2">
                            {project.tags.map((tag, tagIdx) => (
                               <span
                                  key={tagIdx}
