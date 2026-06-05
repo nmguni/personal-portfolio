@@ -54,7 +54,9 @@ const chairmanmills = [
    {
       title: "Element Event Solutions (Chairman Mills)",
       description:
-         " Chairman Mills recently rebranded, bringing all its companies together under one unified brand: Element Event Solutions. The original website is no longer fully accessible, but you can still view it via the Wayback Machine using the “Live Site” button. At Chair-man Mills, I supported and optimized a network of nine WordPress and Headless CMS websites, focusing on compliance, accessibility, and seamless user experience.I customized WordPress themes using PHP, ACF, and Gutenberg blocks to simplify content authoring workflows. Using Zapier and Monday.com automations. Acting as the main technical point of contact, I communicated project updates, deployment timelines, and technical solutions to non‑technical teams keeping site launches on track and stakeholders fully informed.",
+         "Chairman Mills recently rebranded, bringing all its companies together under one unified brand: Element Event Solutions. The original website is no longer fully accessible, but you can still view it via the Wayback Machine via the chairman mills button.",
+      descriptionTwo:
+         " At Chair-man Mills, I supported and optimized a network of nine WordPress and Headless CMS websites, focusing on compliance, accessibility, and seamless user experience.I customized WordPress themes using PHP, ACF, and Gutenberg blocks to simplify content authoring workflows. Using Zapier and Monday.com automations. Acting as the main technical point of contact, I communicated project updates, deployment timelines, and technical solutions to non‑technical teams keeping site launches on track and stakeholders fully informed.",
       tags: [
          "JavaScript",
          "PHP",
@@ -74,11 +76,6 @@ const chairmanmills = [
 ];
 
 const slides = [
-   // {
-   //    title: "Element event",
-   //    image: "../src/assets/images/carousel-imagesel/element-event.jpg",
-
-   // },
    {
       title: "Advanced tent renta",
       image: slideOne,

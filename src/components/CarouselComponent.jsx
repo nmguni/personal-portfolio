@@ -72,6 +72,7 @@ export const CarouselComponent = ({ slides, chairmanmills }) => {
                         </h3>
                      </div>
                      <p className=" line-height-p text-muted-foreground">{mills.description}</p>
+                     <p className=" line-height-p text-muted-foreground">{mills.descriptionTwo}</p>
                      <div className="flex flex-wrap gap-2">
                         {mills.tags.map((tag, tagIdx) => (
                            <span

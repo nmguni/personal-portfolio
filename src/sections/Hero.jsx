@@ -78,11 +78,11 @@ export const Hero = () => {
 
                   {/* CTAs */}
                   <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                     <Button className="btn-animation" size="lg">
+                     <Button type="button" className="btn-animation" size="lg">
                         <a href="#contact">Contact Me</a>
                      </Button>
 
-                     <button className="download-btn relative overflow-hidden rounded-full font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary  text-primary hover:bg-primary/20 shadow-lg shadow-primary/25 px-8 py-4 text-lg btn-animation" size="lg">
+                     <button type="button" className="download-btn relative overflow-hidden rounded-full font-bold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary  text-primary hover:bg-primary/20 shadow-lg shadow-primary/25 px-8 py-4 text-lg btn-animation" size="lg">
                         <a href="../assets/docs/Ndumiso_Mguni_Resume.pdf"
                            download="Ndumiso_Mguni_Resume.pdf">  Download CV
 

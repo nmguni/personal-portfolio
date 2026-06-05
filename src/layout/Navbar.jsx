@@ -52,13 +52,13 @@ export const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-               <Button size="sm" className="btn-animation">
+               <Button type="button" size="sm" className="btn-animation">
                   <a href="#contact">Contact Me</a>
                </Button>
             </div>
 
             {/* Mobile Menu Button */}
-            <button
+            <button type="button"
                className="md:hidden p-2 text-foreground cursor-pointer"
                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             >
@@ -81,7 +81,7 @@ export const Navbar = () => {
                      </a>
                   ))}
 
-                  <Button onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button type="button" onClick={() => setIsMobileMenuOpen(false)}>
                      Contact Me
                   </Button>
                </div>
