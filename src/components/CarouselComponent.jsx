@@ -65,7 +65,7 @@ export const CarouselComponent = ({ slides, chairmanmills }) => {
                   className="group overflow-hidden animate-fade-in md:row-span-1"
                   style={{ animationDelay: `${(idx + 1) * 100}ms` }}
                >
-                  <div className="p-6 space-y-4">
+                  <div className=" project-content-container p-6 space-y-4">
                      <div className="flex items-start justify-between">
                         <h3 className="text-xl text-primary font-semibold ">
                            {mills.title}
