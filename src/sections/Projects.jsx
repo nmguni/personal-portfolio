@@ -2,6 +2,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { CarouselComponent } from "../components/CarouselComponent";
 
 
+
 import skyrizihcpImage from '../assets/images/portfolio-images/skyrizihcp-image.jpg'
 import rinvoqhcpImage from '../assets/images/portfolio-images/rinvoqhcp-image.jpg'
 import SigmaImgae from '../assets/images/portfolio-images/sigma-portfolio.jpg'
@@ -10,6 +11,7 @@ import slideOne from '../assets/images/carousel-images/advanced-tent-rental-port
 import slideTwo from '../assets/images/carousel-images/chairmanmills-slide1.jpg'
 import slideThree from '../assets/images/carousel-images/chairmanmills-slide2.jpg'
 import slideFour from '../assets/images/carousel-images/chairmanmills-slide3.jpg'
+import { PersonalProjects } from "./PersonalProjects";
 
 const projects = [
    {
@@ -184,12 +186,9 @@ export const Projects = () => {
             </div>
 
             {/* View All CTA */}
-            {/* <div className="text-center mt-12 animate-fade-in animation-delay-500">
-               <AnimatedBorderButton>
-                  View All Projects
-
-               </AnimatedBorderButton>
-            </div> */}
+            <div id="personalProjects">
+               <PersonalProjects />
+            </div>
          </div>
       </section>
    );
