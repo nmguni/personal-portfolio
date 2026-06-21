@@ -185,10 +185,10 @@ export const Projects = () => {
                ))}
             </div>
 
-            {/* View All CTA */}
+            {/* View All CTA
             <div id="personalProjects">
                <PersonalProjects />
-            </div>
+            </div> */}
          </div>
       </section>
    );
