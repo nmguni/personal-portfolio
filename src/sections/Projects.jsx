@@ -11,13 +11,13 @@ import slideOne from '../assets/images/carousel-images/advanced-tent-rental-port
 import slideTwo from '../assets/images/carousel-images/chairmanmills-slide1.jpg'
 import slideThree from '../assets/images/carousel-images/chairmanmills-slide2.jpg'
 import slideFour from '../assets/images/carousel-images/chairmanmills-slide3.jpg'
-import { PersonalProjects } from "./PersonalProjects";
+// import { PersonalProjects } from "./PersonalProjects";
 
 const projects = [
    {
       title: "Klick Health | Skyrizi HCP Project",
       description:
-         "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+         "Collaborated with project managers, QA, design, and regulatory teams to deliver responsive, accessible, and cross-browser-compatible web experiences. Translated PSD and Sketch designs into web pages, customized AEM components using HTML, CSS/SASS, and JavaScript, maintained content consistency, resolved technical issues, escalated risks, and documented development processes and best practices.",
       image: skyrizihcpImage,
       tags: ["AEM", "JavaScript", "SCSS", "CSS"],
       link: "https://www.skyrizihcp.com/gastroenterology/crohns-disease",
@@ -26,9 +26,9 @@ const projects = [
    {
       title: "Klick Health | Rinvoq HCP Project",
       description:
-         "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+         "Collaborated with project managers, QA, design, and regulatory teams to deliver responsive, cross-browser web experiences. Customized AEM components using HTML, CSS/SASS, and JavaScript, while ensuring content accuracy, troubleshooting issues, escalating risks, and documenting best practices.",
       image: rinvoqhcpImage,
-      tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+      tags: ["AEM", "JavaScript", "SCSS", "CSS"],
       link: "https://www.rinvoqhcp.com/rheumatoid-arthritis",
       // github: "#",
    },
